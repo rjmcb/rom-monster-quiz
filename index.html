@@ -43,32 +43,32 @@
 <div class="row">
   <div class="col-3">
     <h4>Feet Count</h4>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Apodous" href="#">Apodous</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Biped" href="#">Biped</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Quadruped" href="#">Quadruped</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Apodous" href="#">Apodous</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Biped" href="#">Biped</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Quadruped" href="#">Quadruped</a>
   </div>
   <div class="col-3">
     <h4>Race</h4>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Insect" href="#">Insect</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Brute" href="#">Brute</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Plant" href="#">Plant</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Demon" href="#">Demon</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Insect" href="#">Insect</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Brute" href="#">Brute</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Plant" href="#">Plant</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm"  data-attrib="Demon" href="#">Demon</a>
   </div> 
    <div class="col-3">
     <h4>Element</h4>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Fire" href="#">Fire</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Wind" href="#">Wind</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Earth" href="#">Earth</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Watr" href="#">Water</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Fire" href="#">Fire</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Wind" href="#">Wind</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Earth" href="#">Earth</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Watr" href="#">Water</a>
   </div>
   <div class="col-3">
     <h4>Color</h4>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Yellow" href="#">Yellow</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Red" href="#">Red</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Brown" href="#">Brown</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Blue" href="#">Blue</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="White" href="#">White</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Green" href="#">Green</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Yellow" href="#">Yellow</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Red" href="#">Red</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Brown" href="#">Brown</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Blue" href="#">Blue</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="White" href="#">White</a>
+    <a class="btn btn-clk btn-secondary mt-1 btn-sm" data-attrib="Green" href="#">Green</a>
   </div>
 
   
@@ -113,8 +113,8 @@
   $(function(){
 
   	$("#reset").click(function(){
-  		$(".btn").removeClass("btn-primary")
-  		$(".btn").addClass("btn-secondary");
+  		$(".btn-clk").removeClass("btn-primary")
+  		$(".btn-clk").addClass("btn-secondary");
   		$(".img").show("slow",function(){
   			$("#criteria-string").html("");
   		});
@@ -123,7 +123,7 @@
   	});
 
 
-    $(".btn").click(function(){
+    $(".btn-clk").click(function(){
   	
       if($(this).hasClass("btn-secondary")){
         $(this).removeClass("btn-secondary").addClass("btn-primary");
