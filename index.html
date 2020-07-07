@@ -24,6 +24,7 @@
 #main img {
   width: 100px;
   height: 100px;
+  margin:5px;
 }
 
 .hue { filter: hue-rotate(220deg); }
@@ -35,19 +36,19 @@
 <div class="container">
   
 
-<h1>RAGNAROK ETERNAL LOVE : MONSTER QUIZ</h1>
+<h1>RAGNAROK ETERNAL LOVE : MONSTER QUIZ TRAINER</h1>
 
 
 <div class="row">
   <div class="col-3">
     <h4>Feet Count</h4>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Apod" href="#">Apodous</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Bipe" href="#">Biped</a>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Quad" href="#">Quadruped</a>
+    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Apodous" href="#">Apodous</a>
+    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Biped" href="#">Biped</a>
+    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Quadruped" href="#">Quadruped</a>
   </div>
   <div class="col-3">
     <h4>Race</h4>
-    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Insec" href="#">Insect</a>
+    <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Insect" href="#">Insect</a>
     <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Brute" href="#">Brute</a>
     <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Plant" href="#">Plant</a>
     <a class="btn btn-secondary mt-1 btn-sm"  data-attrib="Demon" href="#">Demon</a>
@@ -56,17 +57,17 @@
     <h4>Element</h4>
     <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Fire" href="#">Fire</a>
     <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Wind" href="#">Wind</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Eart" href="#">Earth</a>
+    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Earth" href="#">Earth</a>
     <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Watr" href="#">Water</a>
   </div>
   <div class="col-3">
     <h4>Color</h4>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Yelo" href="#">Yellow</a>
+    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Yellow" href="#">Yellow</a>
     <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Red" href="#">Red</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Brwn" href="#">Brown</a>
+    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Brown" href="#">Brown</a>
     <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Blue" href="#">Blue</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Whte" href="#">White</a>
-    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Grn" href="#">Green</a>
+    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="White" href="#">White</a>
+    <a class="btn btn-secondary mt-1 btn-sm" data-attrib="Green" href="#">Green</a>
   </div>
 
   
@@ -74,32 +75,34 @@
 
 
 
-
+<h2>Showing : <span id="criteria-string"></span></h2>
 <div id="main" class="mt-5">
   
-  <img  class="img Apod  Plant  Watr Red        " src="https://www.romcodex.com/icons/face/boli.png" title="poring"/>  
-  <img  class="img Apod  Plant  Watr Red         " src="https://www.romcodex.com/icons/face/masterring.png" title="mastering"/>  
-  <img  class="img Apod  Plant  Watr Blue          hue" src="https://www.romcodex.com/icons/face/boli.png" title="poring"/>
-  <img  class="img Apod  Plant  Watr Whte        " src="https://www.romcodex.com/icons/face/marina.png" title="marina"/>
-  <img  class="img Apod  Insec  Eart Grn              " src="https://www.romcodex.com/icons/face/lvmianchong.png" title="fabre"/>
-  <img  class="img Apod  Plant  Eart Grn             " src="https://www.romcodex.com/icons/face/raffliesia.png" title="rafflesia"/>
-  <img  class="img Apod  Insec  Eart Brwn              " src="https://www.romcodex.com/icons/face/pupa.png" title="pupa"/>
-  <img  class="img Apod  Plant  Eart Grn             " src="https://www.romcodex.com/icons/face/chomper.png" title="maneater-grass"/>
-  <img  class="img Apod  Brute  Neut Whte             " src="https://www.romcodex.com/icons/face/fengtu.png" title="lunatic"/>
-  <img  class="img Apod  Brute  Neut Blue            " src="https://www.romcodex.com/icons/face/eclipse.png" title="eclipse"/>
-  <img  class="img Bipe  Plant  Eart Brwn             " src="https://www.romcodex.com/icons/face/wilow.png" title="willow"/>
-  <img  class="img Bipe  Brute  Eart Brwn             " src="https://www.romcodex.com/icons/face/bigfoot.png" title="bigfoot"/>
-  <img  class="img Bipe  Demon  Eart Brwn             " src="https://www.romcodex.com/icons/face/giearth.png" title="giearth"/>
-  <img  class="img Bipe  Demon  Fire Yelo             " src="https://www.romcodex.com/icons/face/moonlight.png" title="moonlight flower"/>
-  <img  class="img Bipe  Insec  Fire Yelo              " src="https://www.romcodex.com/icons/face/metaller.png" title="metaller"/>
-  <img  class="img Bipe  Insec  Eart Grn              " src="https://www.romcodex.com/icons/face/mantis.png" title="mantis"/>
-  <img  class="img Quad  Brute  Fire Yelo             " src="https://www.romcodex.com/icons/face/ninetail.png" title="ninetail"/>
-  <img  class="img Quad  Brute  Fire Brwn             " src="https://www.romcodex.com/icons/face/littlewolf.png" title="desert wolf"/>
-  <img  class="img Quad  Plant  Wind Whte             " src="https://www.romcodex.com/icons/face/stemworm.png" title="stemworm"/>
-  <img  class="img Quad  Brute  Eart Blue              " src="https://www.romcodex.com/icons/face/wolf.png" title="wolf"/>
-  <img  class="img Quad  Demon  Wind Yelo             " src="https://www.romcodex.com/icons/face/hapy.png" title="harpy"/>
+  <img  class="img Apodous  Plant  Watr Red        " src="https://www.romcodex.com/icons/face/boli.png" title="poring"/>  
+  <img  class="img Apodous  Plant  Watr Red         " src="https://www.romcodex.com/icons/face/masterring.png" title="mastering"/>  
+  <img  class="img Apodous  Plant  Watr Blue          hue" src="https://www.romcodex.com/icons/face/boli.png" title="poring"/>
+  <img  class="img Apodous  Plant  Watr White        " src="https://www.romcodex.com/icons/face/marina.png" title="marina"/>
+  <img  class="img Apodous  Insect  Earth Green              " src="https://www.romcodex.com/icons/face/lvmianchong.png" title="fabre"/>
+  <img  class="img Apodous  Plant  Earth Green             " src="https://www.romcodex.com/icons/face/raffliesia.png" title="rafflesia"/>
+  <img  class="img Apodous  Insect  Earth Brown              " src="https://www.romcodex.com/icons/face/pupa.png" title="pupa"/>
+  <img  class="img Apodous  Plant  Earth Green             " src="https://www.romcodex.com/icons/face/chomper.png" title="maneater-grass"/>
+  <img  class="img Apodous  Brute  Neut White             " src="https://www.romcodex.com/icons/face/fengtu.png" title="lunatic"/>
+  <img  class="img Apodous  Brute  Neut Blue            " src="https://www.romcodex.com/icons/face/eclipse.png" title="eclipse"/>
+  <img  class="img Biped  Plant  Earth Brown             " src="https://www.romcodex.com/icons/face/wilow.png" title="willow"/>
+  <img  class="img Biped  Brute  Earth Brown             " src="https://www.romcodex.com/icons/face/bigfoot.png" title="bigfoot"/>
+  <img  class="img Biped  Demon  Earth Brown             " src="https://www.romcodex.com/icons/face/giearth.png" title="giearth"/>
+  <img  class="img Biped  Demon  Fire Yellow             " src="https://www.romcodex.com/icons/face/moonlight.png" title="moonlight flower"/>
+  <img  class="img Biped  Insect  Fire Yellow              " src="https://www.romcodex.com/icons/face/metaller.png" title="metaller"/>
+  <img  class="img Biped  Insect  Earth Green              " src="https://www.romcodex.com/icons/face/mantis.png" title="mantis"/>
+  <img  class="img Quadruped  Brute  Fire Yellow             " src="https://www.romcodex.com/icons/face/ninetail.png" title="ninetail"/>
+  <img  class="img Quadruped  Brute  Fire Brown             " src="https://www.romcodex.com/icons/face/littlewolf.png" title="desert wolf"/>
+  <img  class="img Quadruped  Plant  Wind White             " src="https://www.romcodex.com/icons/face/stemworm.png" title="stemworm"/>
+  <img  class="img Quadruped  Brute  Earth Blue              " src="https://www.romcodex.com/icons/face/wolf.png" title="wolf"/>
+  <img  class="img Biped  Demon  Wind Yellow             " src="https://www.romcodex.com/icons/face/hapy.png" title="harpy"/>
  
 </div>
+
+
 
 <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support this website</p>
 </div>
@@ -107,10 +110,48 @@
 <script>
   $(function(){
     $(".btn").click(function(){
-      var a = $(this).attr("data-attrib");
-      alert(a);
+  
+      if($(this).hasClass("btn-secondary")){
+        $(this).removeClass("btn-secondary").addClass("btn-primary");
+        $(this).addClass("active");
+      }else{
+        $(this).removeClass("btn-primary").addClass("btn-secondary");
+        $(this).removeClass("active");
+      }
+
+      var arr = [];
+      $(".active").each(function(){
+           var a = $(this).attr("data-attrib");
+           $(".img").hide("fast",function(){
+           $("." + a).show("fast"); 
+           });
+           var newStr = "";
+           console.log(arr);
+          arr.push(a);
+
+           arr.forEach(function (item, index) {
+            console.log(item);
+            if(index===0){
+                  newStr += "" + item;
+            }else{
+              newStr += " and " + item;
+            }
+          
+            });
+
+
+           $("#criteria-string").html(newStr);
+          
+      });
+
+
+
     });
   });
+
+
+
+
 </script>
 
 
