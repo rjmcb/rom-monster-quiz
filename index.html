@@ -115,8 +115,10 @@
   	$("#reset").click(function(){
   		$(".btn").removeClass("btn-primary")
   		$(".btn").addClass("btn-secondary");
-  		$(".img").show("slow");
-  		$("#criteria-string").html("");
+  		$(".img").show("slow",function(){
+  			$("#criteria-string").html("");
+  		});
+  		
 		
   	});
 
