@@ -114,8 +114,6 @@
 
   	$("#reset").click(function(){
   		document.location.reload();
-  		
-		
   	});
 
 
@@ -133,24 +131,30 @@
       $(".active").each(function(){
            var a = $(this).attr("data-attrib");
            $(".img").hide("fast",function(){
-           $("." + a).show("fast"); 
+           //$("." + a).show("fast"); 
            });
            var newStr = "";
            console.log(arr);
-          arr.push(a);
-
+		   arr.push(a);
+			
+			
+			arr.forEach(function (item, index) {
+                  qqq += "." + item + "";
+			});
+			
+		   $(qqq).show("fast"); 
+		   
            arr.forEach(function (item, index) {
-            console.log(item);
+            
             if(index===0){
                   newStr += "" + item;
             }else{
               newStr += " and " + item;
             }
-          
             });
-
-
-           $("#criteria-string").html(newStr);
+			
+			
+            $("#criteria-string").html(newStr);
           
       });
 
