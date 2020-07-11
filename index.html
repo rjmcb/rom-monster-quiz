@@ -126,20 +126,20 @@
         $(this).removeClass("btn-primary").addClass("btn-secondary");
         $(this).removeClass("active");
       }
+		    var qqq = "";
 
       var arr = [];
       $(".active").each(function(){
            var a = $(this).attr("data-attrib");
-           $(".img").hide("fast",function(){
+           $(".img").hide("",function(){
            //$("." + a).show("fast"); 
            });
            var newStr = "";
   
 		   arr.push(a);
 			
-		    var qqq = "";
 			arr.forEach(function (item, index) {
-                  qqq = "." + item + "";
+                  qqq += "." + item + "";
 			});
 			
 		   $(qqq).show("fast"); 
