@@ -116,9 +116,9 @@
   		document.location.reload();
   	});
 
-	qqq ="";
+	
     $(".btn-clk").click(function(){
-  	
+  	   
       if($(this).hasClass("btn-secondary")){
         $(this).removeClass("btn-secondary").addClass("btn-primary");
         $(this).addClass("active");
@@ -137,9 +137,9 @@
            console.log(arr);
 		   arr.push(a);
 			
-		
+		    var qqq = "";
 			arr.forEach(function (item, index) {
-                  qqq += "." + item + "";
+                  qqq = "." + item + "";
 			});
 			
 		   $(qqq).show("fast"); 
